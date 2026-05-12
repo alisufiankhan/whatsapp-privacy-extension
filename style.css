@@ -205,179 +205,42 @@ a {
     font-weight: 500;
 }
 
-/* Browser Visual */
-.hero-browser {
+/* Hero Image */
+.hero-image-wrapper {
     width: 100%;
-    max-width: 1000px;
-    background: #111b21;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 40px 100px rgba(0,0,0,0.15);
+    max-width: 1100px;
+    margin-top: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-main-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.1);
     border: 1px solid var(--border-color);
 }
 
-.browser-header {
-    background: #202c33;
-    padding: 12px 20px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+/* Demo Section */
+.demo-section {
+    padding: 100px 0;
+    background: var(--bg-white);
 }
 
-.browser-dots {
-    display: flex;
-    gap: 8px;
+.demo-video-wrapper {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.1);
+    border: 1px solid var(--border-color);
+    background: #000;
 }
 
-.browser-dots span {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #ff5f56;
-}
-
-.browser-dots span:nth-child(2) { background: #ffbd2e; }
-.browser-dots span:nth-child(3) { background: #27c93f; }
-
-.browser-address {
-    background: #111b21;
-    padding: 6px 20px;
-    border-radius: 6px;
-    color: #8696a0;
-    font-size: 0.75rem;
-    flex: 1;
-    max-width: 400px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.browser-content {
-    display: flex;
-    height: 500px;
-}
-
-.whatsapp-sidebar {
-    width: 35%;
-    border-right: 1px solid #202c33;
-    padding: 20px;
-    text-align: left;
-}
-
-.whatsapp-title {
-    color: white;
-    font-weight: 700;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.whatsapp-search {
-    background: #202c33;
-    padding: 8px 12px;
-    border-radius: 8px;
-    font-size: 0.8rem;
-    color: #8696a0;
-    margin-bottom: 24px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.whatsapp-chat {
-    display: flex;
-    gap: 12px;
-    padding: 12px 0;
-    border-bottom: 1px solid #202c33;
-}
-
-.chat-avatar {
-    width: 40px;
-    height: 40px;
-    background: #00a884;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: 700;
-}
-
-.chat-name {
-    color: white;
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
-.chat-name-blur {
-    width: 80px;
-    height: 10px;
-    background: #202c33;
-    border-radius: 10px;
-    filter: blur(4px);
-}
-
-.whatsapp-main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.main-header {
-    background: #202c33;
-    padding: 12px 24px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    text-align: left;
-}
-
-.main-header-info div:first-child { color: white; font-weight: 600; font-size: 0.95rem; }
-.main-header-info div:last-child { color: #8696a0; font-size: 0.75rem; }
-
-.privacy-status {
-    margin-left: auto;
-    background: rgba(75, 99, 68, 0.2);
-    color: #98b394;
-    padding: 6px 12px;
-    border-radius: 100px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.main-chat {
-    flex: 1;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
-    background-size: contain;
-}
-
-.msg-bubble {
-    padding: 10px 16px;
-    border-radius: 12px;
-    font-size: 0.9rem;
-    max-width: 70%;
-}
-
-.received { background: #202c33; color: white; }
-.sent { background: #005c4b; color: white; align-self: flex-end; }
-
-.received-blur {
-    background: #202c33;
-    height: 40px;
-    filter: blur(12px);
-    width: 200px;
-}
-
-.hover-hint {
-    color: #8696a0;
-    font-size: 0.7rem;
-    margin-left: 200px;
+.demo-video {
+    width: 100%;
+    display: block;
 }
 
 /* Stats Bar */
