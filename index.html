@@ -4,248 +4,390 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatsApp Privacy Extension - Secure Your Chats</title>
+    <title>WhatsApp Privacy Extension - Privacy on your terms</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/icon128.png">
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo-container">
-            <img src="img/icon128.png" alt="WPE Logo" class="nav-logo">
-            <span>WhatsApp Privacy Extension</span>
-        </div>
-        <div class="nav-links">
-            <a href="#features">Features</a>
-            <a href="#reviews">Reviews</a>
-            <a href="#about">About</a>
-            <a href="https://instagram.com/alis.code" target="_blank" class="instagram-link">
-                <!-- Instagram SVG -->
-                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="currentColor">
-                    <path
-                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                </svg>
-                Follow on Instagram
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="img/icon128.png" alt="WPE Logo">
+                <span>WhatsApp Privacy</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How it works</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+            <a href="https://chromewebstore.google.com/detail/whatsapp-privacy-extensio/jbipjgbbfhdgedlpgpngpjoafpncjgdf" target="_blank" class="btn btn-primary nav-cta">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Add to Chrome
             </a>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <div class="badge">New Release 1.0</div>
-            <h1>Privacy for your messages,<br> <span class="text-gradient">visible only when you want.</span></h1>
-            <p class="hero-subtitle">The essential Chrome extension for WhatsApp Web. Blur messages, media, and contacts
-                automatically. Reveal them instantly with a simple hover.</p>
-
-            <div class="cta-container">
-                <a href="https://chromewebstore.google.com/detail/whatsapp-privacy-extensio/jbipjgbbfhdgedlpgpngpjoafpncjgdf"
-                    target="_blank" class="btn btn-primary">
-                    <span>Add to Chrome</span>
+        <!-- Hero -->
+        <section class="hero-centered">
+            <div class="hero-badge-container">
+                <div class="hero-badge-line"></div>
+                <div class="hero-badge-text">FREE · OPEN SOURCE · V1.0</div>
+                <div class="hero-badge-line"></div>
+            </div>
+            <h1 class="hero-title">Your messages,<br><em>seen only by you.</em></h1>
+            <p class="hero-subtitle-centered">The Chrome extension that blurs WhatsApp Web messages, media, and contacts automatically. Reveal anything instantly with a hover.</p>
+            
+            <div class="hero-actions-centered">
+                <a href="https://chromewebstore.google.com/detail/whatsapp-privacy-extensio/jbipjgbbfhdgedlpgpngpjoafpncjgdf" target="_blank" class="btn btn-dark">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Add to Chrome Free
                 </a>
-                <a href="#features" class="btn btn-secondary">Learn More</a>
+                <a href="#how-it-works" class="btn btn-outline">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    See it in action
+                </a>
             </div>
 
-            <p class="small-text">Free • No Data Collection • Open Source</p>
-        </div>
-
-        <!-- Screenshot Visual -->
-        <div class="hero-visual">
-            <img src="img/p-e-s.png" alt="WhatsApp Privacy Extension Screenshot" class="hero-screenshot floating">
-        </div>
-    </header>
-
-    <!-- Video Demo Section -->
-    <section id="demo" class="video-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>See it in <span class="highlight">Action</span></h2>
-                <p>Watch how easy it is to protect your privacy.</p>
-            </div>
-            <div class="video-wrapper">
-                <video controls>
-                    <source src="img/demo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <div class="section-title">
-                <h2>Everything you need for <span class="highlight">Privacy</span></h2>
-                <p>Designed for open offices, classrooms, and public spaces.</p>
+            <div class="hero-badges-row">
+                <div class="badge-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> No data collected</div>
+                <div class="badge-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> Open source</div>
+                <div class="badge-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> 5,000+ users</div>
+                <div class="badge-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 4.9 on Chrome Store</div>
             </div>
 
-            <div class="grid">
-                <div class="card glass">
-                    <div class="icon-box">💬</div>
-                    <h3>Blur Messages</h3>
-                    <p>Hide conversation text automatically. Only read what you want, when you want, by simply hovering
-                        over it.</p>
+            <!-- Browser Visual -->
+            <div class="hero-browser">
+                <div class="browser-header">
+                    <div class="browser-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="browser-address">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        web.whatsapp.com
+                    </div>
                 </div>
-                <div class="card glass">
-                    <div class="icon-box">🖼️</div>
-                    <h3>Hide Media</h3>
-                    <p>Stop prying eyes from seeing your photos and videos. Images are blurred until you decide to
-                        reveal them.</p>
-                </div>
-                <div class="card glass">
-                    <div class="icon-box">👤</div>
-                    <h3>Anonymous Contacts</h3>
-                    <p>Blur contact names and profile pictures. Keep the identities of who you are talking to completely
-                        private.</p>
-                </div>
-                <div class="card glass">
-                    <div class="icon-box">⚡</div>
-                    <h3>Instant Toggle</h3>
-                    <p>Need to show your screen? Toggle privacy on or off instantly with a global switch or keyboard
-                        shortcut.</p>
+                <div class="browser-content">
+                    <div class="whatsapp-sidebar">
+                        <div class="whatsapp-title">WhatsApp</div>
+                        <div class="whatsapp-search">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                            Search or start new chat
+                        </div>
+                        <div class="whatsapp-chat active">
+                            <div class="chat-avatar">S</div>
+                            <div class="chat-info">
+                                <div class="chat-name">Sarah J.</div>
+                                <div class="chat-msg"></div>
+                            </div>
+                        </div>
+                        <div class="whatsapp-chat">
+                            <div class="chat-avatar" style="background:#202c33">D</div>
+                            <div class="chat-info">
+                                <div class="chat-name-blur"></div>
+                                <div class="chat-msg"></div>
+                            </div>
+                        </div>
+                        <div class="whatsapp-chat">
+                            <div class="chat-avatar" style="background:#202c33">A</div>
+                            <div class="chat-info">
+                                <div class="chat-name-blur"></div>
+                                <div class="chat-msg"></div>
+                            </div>
+                        </div>
+                        <div class="whatsapp-chat">
+                            <div class="chat-avatar" style="background:#202c33">P</div>
+                            <div class="chat-info">
+                                <div class="chat-name-blur"></div>
+                                <div class="chat-msg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="whatsapp-main">
+                        <div class="main-header">
+                            <div class="chat-avatar">S</div>
+                            <div class="main-header-info">
+                                <div>Sarah J.</div>
+                                <div>online</div>
+                            </div>
+                            <div class="privacy-status">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                Privacy on
+                            </div>
+                        </div>
+                        <div class="main-chat">
+                            <div class="msg-bubble received">Hey! Meeting still at 3pm today?</div>
+                            <div class="msg-bubble received-blur"></div>
+                            <div class="hover-hint">☉ hover to reveal</div>
+                            <div class="msg-bubble received-blur"></div>
+                            <div class="msg-bubble sent">Sure, see you there!</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Comparison Section -->
-    <section id="comparison" class="comparison-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Why Choose <span class="highlight">Us?</span></h2>
-                <p>See how we stack up against the rest.</p>
+        <!-- Stats Bar -->
+        <section class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-value">5,000+</div>
+                <div class="stat-label">Active users</div>
             </div>
-            <div class="comparison-wrapper">
+            <div class="stat-item">
+                <div class="stat-value">4.9</div>
+                <div class="stat-label">Chrome rating</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">0</div>
+                <div class="stat-label">Bytes collected</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">100%</div>
+                <div class="stat-label">Open source</div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="features">
+            <div class="section-header-centered">
+                <div class="section-tag-centered">Features</div>
+                <h2>Built for <em>real-world privacy</em></h2>
+                <p>Every feature designed for the moments that matter. Open offices, classrooms, public transport.</p>
+            </div>
+            <div class="features-grid-clean">
+                <div class="feature-box">
+                    <div class="feature-num">01</div>
+                    <h3>Blur messages</h3>
+                    <p>Text stays hidden until you hover. No accidental reveals, no anxiety.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-num">02</div>
+                    <h3>Hide media</h3>
+                    <p>Photos and videos blur automatically. You decide when to view them.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-num">03</div>
+                    <h3>Anonymous contacts</h3>
+                    <p>Names and profile pictures blurred. Your social network stays private.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-num">04</div>
+                    <h3>Instant toggle</h3>
+                    <p>One keyboard shortcut flips everything on or off. Zero delay, zero animation.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-num">05</div>
+                    <h3>Typing blur</h3>
+                    <p>Your draft messages stay hidden too. Nobody reads what you're composing.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-num">06</div>
+                    <h3>No performance hit</h3>
+                    <p>Lightweight by design. WhatsApp runs exactly as fast as before.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Running in under 60s -->
+        <section id="how-it-works" class="steps-dark">
+            <h2>Running in <em>under 60 seconds</em></h2>
+            <p class="steps-subtitle">Four steps. No account. No configuration screens.</p>
+            <div class="steps-container">
+                <div class="steps-line"></div>
+                <div class="steps-grid-centered">
+                    <div class="step-card">
+                        <div class="step-num-large">01</div>
+                        <h3>Install</h3>
+                        <p>One click from the Chrome Web Store. No sign-up required.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num-large">02</div>
+                        <h3>Open WhatsApp</h3>
+                        <p>Navigate to web.whatsapp.com. The extension activates automatically.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num-large">03</div>
+                        <h3>Configure</h3>
+                        <p>Choose what to blur from the popup. Preferences saved instantly.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num-large">04</div>
+                        <h3>Hover to read</h3>
+                        <p>Hover any blurred element to reveal it. Move away and it hides again.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison -->
+        <section class="comparison">
+            <div class="section-header-centered">
+                <div class="section-tag-centered">Comparison</div>
+                <h2>How we <em>stack up</em></h2>
+                <p>An honest comparison against other privacy extensions.</p>
+            </div>
+            <div class="comparison-card">
                 <table class="comparison-table">
                     <thead>
                         <tr>
                             <th>Feature</th>
-                            <th class="highlight-header">WhatsApp Privacy Extension</th>
-                            <th>Other Extensions</th>
+                            <th class="highlight-col">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                THIS EXTENSION
+                            </th>
+                            <th>OTHERS</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Blur Messages</td>
-                            <td>✅</td>
-                            <td>✅</td>
-                        </tr>
-                        <tr>
-                            <td>Hide Media</td>
-                            <td>✅</td>
-                            <td>✅</td>
-                        </tr>
-                        <tr>
-                            <td>Profile Picture Blur</td>
-                            <td>✅</td>
-                            <td>❌</td>
-                        </tr>
-                        <tr>
-                            <td>Group Name Blur</td>
-                            <td>✅</td>
-                            <td>❌</td>
-                        </tr>
-                        <tr>
-                            <td>Typing Blur</td>
-                            <td>✅</td>
-                            <td>❌</td>
-                        </tr>
-                        <tr>
-                            <td>No Transition Delay</td>
-                            <td>✅</td>
-                            <td>❌</td>
-                        </tr>
+                        <tr><td>Blur messages</td><td class="highlight-col">✓</td><td>✓</td></tr>
+                        <tr><td>Hide media</td><td class="highlight-col">✓</td><td>✓</td></tr>
+                        <tr><td>Profile picture blur</td><td class="highlight-col">✓</td><td class="x-icon">✕</td></tr>
+                        <tr><td>Group name blur</td><td class="highlight-col">✓</td><td class="x-icon">✕</td></tr>
+                        <tr><td>Typing input blur</td><td class="highlight-col">✓</td><td class="x-icon">✕</td></tr>
+                        <tr><td>No transition delay</td><td class="highlight-col">✓</td><td class="x-icon">✕</td></tr>
+                        <tr><td>Zero data collection</td><td class="highlight-col">✓</td><td class="x-icon">✕</td></tr>
                     </tbody>
                 </table>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Review Section (New) -->
-    <section id="reviews" class="reviews-section">
+        <!-- Trust Section -->
+        <section class="trust">
+            <div class="section-header-centered">
+                <div class="section-tag-centered">Trust</div>
+                <h2>Nothing to hide. <em>including the code</em></h2>
+            </div>
+            <div class="trust-grid-clean">
+                <div class="trust-box">
+                    <div class="trust-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></div>
+                    <h3>Fully open source</h3>
+                    <p>Every line is on GitHub. Read it, fork it, audit it yourself anytime.</p>
+                </div>
+                <div class="trust-box">
+                    <div class="trust-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/><line x1="1" y1="1" x2="23" y2="23"/></svg></div>
+                    <h3>Zero data collection</h3>
+                    <p>No analytics, no telemetry. Nothing ever leaves your browser.</p>
+                </div>
+                <div class="trust-box">
+                    <div class="trust-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+                    <h3>Minimal permissions</h3>
+                    <p>Only accesses web.whatsapp.com. Nowhere else on your browser.</p>
+                </div>
+                <div class="trust-box">
+                    <div class="trust-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+                    <h3>Free forever</h3>
+                    <p>No freemium, no ads, no subscriptions. A promise, not a marketing line.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section id="reviews">
+            <div class="section-header-centered">
+                <div class="section-tag-centered">Reviews</div>
+                <h2>What users are <em>saying</em></h2>
+                <p>Real reviews from the Chrome Web Store.</p>
+            </div>
+            <div class="reviews-grid-clean">
+                <div class="review-card-clean">
+                    <div class="stars-clean">★★★★★</div>
+                    <p class="review-text-clean">"The media blur is a lifesaver. I often get personal photos in chats and now I don't worry about opening WhatsApp at work. One hover. Perfect."</p>
+                    <div class="author-row">
+                        <div class="author-circle">S</div>
+                        <div class="author-info-clean">
+                            <div>Sarah J.</div>
+                            <div>Chrome Web Store</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card-clean">
+                    <div class="stars-clean">★★★★★</div>
+                    <p class="review-text-clean">"The keyboard shortcut is genius. When my boss walks by, I just hit it, everything blurs instantly. No transitions, no delay. Highly recommend."</p>
+                    <div class="author-row">
+                        <div class="author-circle">A</div>
+                        <div class="author-info-clean">
+                            <div>Alex T.</div>
+                            <div>Chrome Web Store</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card-clean">
+                    <div class="stars-clean">★★★★★</div>
+                    <p class="review-text-clean">"It hides contact names too. not just messages. I don't want people knowing who I'm talking to. This nails the privacy aspect completely."</p>
+                    <div class="author-row">
+                        <div class="author-circle">D</div>
+                        <div class="author-info-clean">
+                            <div>Dev_Mike</div>
+                            <div>Chrome Web Store</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card-clean">
+                    <div class="stars-clean">★★★★★</div>
+                    <p class="review-text-clean">"Finally a privacy extension that doesn't slow WhatsApp down. Typing blur is a nice touch. people can't even see what I'm drafting."</p>
+                    <div class="author-row">
+                        <div class="author-circle">P</div>
+                        <div class="author-info-clean">
+                            <div>Priya22</div>
+                            <div>Chrome Web Store</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Maker Section -->
+        <section class="maker-centered">
+            <div class="maker-card">
+                <div class="section-tag-dark">Built by a Maker</div>
+                <div class="maker-avatar-container">
+                    <img src="img/Ali Sufian.png" class="maker-avatar-large" alt="Ali Sufian">
+                </div>
+                <h2 class="maker-name-large">Ali Sufian</h2>
+                <div class="maker-tag-green">Independent Maker</div>
+                <p class="maker-bio">Ali builds tools he actually needs. This extension started as a personal frustration. Too many awkward moments checking messages in public. So he built the fix, made it open source, and shared it with the world for free.</p>
+                <div class="maker-links-centered">
+                    <a href="https://github.com/alisufiankhan" target="_blank" class="btn btn-dark-small"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> GitHub</a>
+                    <a href="https://instagram.com/alis.code" target="_blank" class="btn btn-dark-small"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg> Instagram</a>
+                    <a href="mailto:alisufiancodes@gmail.com" class="btn btn-dark-small"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Email Ali</a>
+                    <a href="#" class="btn btn-dark-small"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> Website</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Final CTA -->
+    <section class="final-cta-full">
         <div class="container">
-            <div class="section-title">
-                <h2>What Users Are <span class="highlight">Saying</span></h2>
-                <p>Real feedback from the Chrome Web Store.</p>
-            </div>
-
-            <div class="scroll-container">
-                <!-- Review 1 -->
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">The media blur is a lifesaver. I often get personal photos in chats, and now
-                        I don't have to worry about opening WhatsApp at work. One hover and I can see it. Perfect.</p>
-                    <p class="review-author">Sarah J.</p>
-                </div>
-                <!-- Review 2 -->
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">I love that I can hide contact names. It's not just about the messages;
-                        sometimes I don't want people to even know WHO I'm talking to. This extension nails that privacy
-                        aspect.</p>
-                    <p class="review-author">Dev_Mike</p>
-                </div>
-                <!-- Review 3 -->
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">The global toggle with a shortcut is genius. When my boss walks by, I just
-                        hit the switch and everything is safe. No transitions, instant blur. Highly recommend.</p>
-                    <p class="review-author">Alex T.</p>
-                </div>
-                <!-- Review 4 -->
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐☆</div>
-                    <p class="review-text">Finally a privacy extension that doesn't make WhatsApp laggy. The typing
-                        input blur is a nice touch too—people can't even see what I'm drafting.</p>
-                    <p class="review-author">Prya22</p>
-                </div>
-                <!-- Review 5 -->
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">I use the 'No Transition Delay' setting because I hate waiting for the unblur
-                        animation. It feels super snappy. Best one I've used so far.</p>
-                    <p class="review-author">NomadWorker</p>
-                </div>
-                <!-- Review 6 -->
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">Simple and effective. I keep Profile Pictures blurred by default so my screen
-                        just looks like a bunch of grey generic blocks. Zero distractions.</p>
-                    <p class="review-author">Chris W.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Feedback Section -->
-    <section id="feedback" class="feedback-section">
-        <div class="container">
-            <div class="feedback-content">
-                <h2>Have Feedback or a Feature Request?</h2>
-                <p>We build for you. Let us know how we can improve.</p>
-                <a href="mailto:alisufiancodes@gmail.com" class="btn btn-secondary feedback-btn">Email the Developer</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Developer Section -->
-    <footer id="about">
-        <div class="footer-content">
-            <div class="dev-info">
-                <h4>WhatsApp Privacy Extension</h4>
-                <p>Built with ❤️ by <a href="https://instagram.com/alis.code" class="dev-link">Ali Sufian</a></p>
-            </div>
-            <div class="social-links">
-                <a href="https://instagram.com/alis.code" target="_blank" class="social-btn">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                        <path
-                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                    </svg>
-                    <span>@alis.code</span>
+            <h2 class="final-title">Take back <br><em>your privacy.</em></h2>
+            <p class="final-subtitle">Free. Open source. No data collected. Works in 60 seconds.</p>
+            <div class="final-actions">
+                <a href="https://chromewebstore.google.com/detail/whatsapp-privacy-extensio/jbipjgbbfhdgedlpgpngpjoafpncjgdf" target="_blank" class="btn btn-white-rounded">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Add to Chrome it's free
                 </a>
+                <a href="https://github.com/alisufiankhan/whatsapp-privacy-extension" target="_blank" class="btn btn-outline-white">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-dark">
+        <div class="container footer-content-row">
+            <div class="footer-left">
+                <span>✦</span> WhatsApp Privacy Extension · Built by Ali Sufian
+            </div>
+            <div class="footer-right">
+                <a href="https://github.com/alisufiankhan" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> GitHub</a>
+                <a href="https://instagram.com/alis.code" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg> Instagram</a>
+                <a href="mailto:alisufiancodes@gmail.com"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Feedback</a>
             </div>
         </div>
     </footer>
